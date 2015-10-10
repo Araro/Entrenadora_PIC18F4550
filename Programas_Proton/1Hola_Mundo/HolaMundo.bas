@@ -26,7 +26,7 @@ PORTE = %00000000
  
 INICIO:					                'Programa pricipal
 
-	High PORTB.0			            'Se activa RB0 en alto
+		High PORTB.0			        'Se activa RB0 en alto
         DelayMS 500			            'Retardo de 500 Ms
         Low PORTB.0			            'Se pone RB0 en bajo
         DelayMS 500			            'Retardo de 500 Ms
