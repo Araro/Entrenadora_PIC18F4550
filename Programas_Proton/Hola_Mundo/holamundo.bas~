@@ -8,30 +8,29 @@
 '*  Notes   :  Enciende un LED en PORTB.0 por 500 ms y lo       *
 '*          :    apaga por otros 500 ms                         *
 '****************************************************************
-Device 18F4550   			'Selección del dispositivo a utilizar
-Xtal = 20				'Se configura el cristal a 20 MHz
+Device 18F4550
+Xtal=20
 
-Declare PROTON_STAR_ADRESS = $1000	'Se define que se utilizará el bootloader
+Declare PROTON_STAR_ADRESS = $1000
 
-DelayMS 500				'Retardo de 500 Ms para permitir una 
-					'configuración satisfactoria
+DelayMS 500
 
-All_Digital=TRUE			'Se declaran los puertos como digitales
+All_Digital=TRUE
 
-TRISA = %00000000			'Configuración de los puertos como salidas
+TRISA = %00000000
 TRISB = %00000000
 TRISE = %00000000
-PORTB = %00000000			'Se inicializan los puertos en ceros
-PORTE = %00000000
- 
-INICIO:					'Programa pricipal
+PORTB=0
+PORTE=0
 
-	High PORTB.0			'Se activa RB0 en alto
-        DelayMS 500			'Retardo de 500 Ms
-        Low PORTB.0			'Se pone RB0 en bajo
-        DelayMS 500			'Retardo de 500 Ms
+      INICIO:
 
-GoTo INICIO				'Bucle infinito
+        High PORTB.0
+        DelayMS 500
+        Low PORTB.0
+        DelayMS 500
+
+     GoTo INICIO
    
 End   
 
