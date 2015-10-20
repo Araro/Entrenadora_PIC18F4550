@@ -1,6 +1,6 @@
 '****************************************************************
 '*  Name    : CorrimientodebitsPORTB.BAS                        *
-'*  Author  : Mecatronica Tec                                   *
+'*  Author  : Mecatronica Tec (Mariano)                         *
 '*  Notice  : Copyright (c) 2015 Mecatronica Tec                *
 '*          : All Rights Reserved                               *
 '*  Date    : 18/10/2015                                        *
